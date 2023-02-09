@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="navbar h-20 w-full" :class="{ 'navbar--hidden': !showNavbar }">
+    <div
+      class="navbar h-20 w-full border-b z-20"
+      :class="{ 'navbar--hidden': !showNavbar }"
+    >
       <GlobalPadding>
         <div class="nav_container flex justify-between items-center h-full">
           <div class="left_container flex items-center">
@@ -46,28 +49,27 @@
       </GlobalPadding>
     </div>
     <div
-      v-show="toggleMenu"
-      class="navbar_menu absolute h-full w-full bg-black opacity-80 mt-20 pt-20"
+      class="navbar_menu absolute z-10 h-full w-full bg-black opacity-80 mt-20 hide_nav hidden"
     >
       <div
         class="nav_items_container w-full h-full flex items-center justify-center"
       >
         <div
-          class="nav_items flex flex-col text-4xl text-center font-bold -mt-36 items-center"
+          class="nav_items flex flex-col text-5xl text-center font-bold -mt-44 items-center"
         >
-          <div class="link_container flex flex-col mb-10 text-4xl">
+          <div class="link_container flex flex-col mb-10">
             <a class="z-10 px-2" href="">Business</a>
             <div class="link_underline deep_blue z-0 w-full h-4 -mt-3"></div>
           </div>
-          <div class="link_container flex flex-col mb-10 text-4xl">
+          <div class="link_container flex flex-col mb-10">
             <a class="z-10 px-2" href="">About us</a>
             <div class="link_underline fuchsia z-0 w-full h-4 -mt-3"></div>
           </div>
-          <div class="link_container flex flex-col mb-10 text-4xl">
+          <div class="link_container flex flex-col mb-10">
             <a class="z-10 px-2" href="">Help Center</a>
             <div class="link_underline turquoise z-0 w-full h-4 -mt-3"></div>
           </div>
-          <div class="link_container flex flex-col mb-10 text-4xl">
+          <div class="link_container flex flex-col mb-10">
             <a class="z-10 px-2" href="">Jobs</a>
             <div class="link_underline deep_purple z-0 w-full h-4 -mt-3"></div>
           </div>
@@ -82,7 +84,6 @@
 </template>
 
 <script>
-import { createIfStatement } from "@vue/compiler-core";
 import GlobalPadding from "../layouts/GlobalPadding.vue";
 
 export default {
@@ -96,10 +97,13 @@ export default {
   name: "TheNavbar",
   components: { GlobalPadding },
   methods: {
-    toggleNav: function () {
+    toggleNav() {
       const navBar = document.querySelector(".nav_bar");
+      const navBarMenu = document.querySelector(".navbar_menu");
       const body = document.body;
+      navBarMenu.classList.remove("hidden");
       navBar.classList.toggle("change");
+      navBarMenu.classList.toggle("hide_nav");
       this.toggleMenu = !this.toggleMenu;
 
       body.style.overflow === ""
