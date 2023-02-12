@@ -20,6 +20,7 @@
   --turquoise: #26c7c3;
   --deeppurple: #a22fb6;
   --orange: #ff7819;
+  --lightblue: #3180fe;
 }
 .active {
   background-color: black;
@@ -208,4 +209,22 @@ input[type="checkbox"]:before {
 }
 input:checked[type="checkbox"]:before {
   left: 110px;
+}
+
+.card {
+  background-color: var(--dark);
+  border-color: var(--hiring);
+}
+.card.card_popular {
+  border-color: var(--lightblue);
+}
+.popular_class {
+  background-color: var(--lightblue);
+}
+
+/* --- TheSection --- */
+.section {
+  background-color: var(--background);
+  height: 100vh;
+  max-height: 767px;
 }
