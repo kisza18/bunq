@@ -225,6 +225,16 @@ input:checked[type="checkbox"]:before {
 /* --- TheSection --- */
 .section {
   background-color: var(--background);
-  height: 100vh;
-  max-height: 767px;
+}
+.section_card {
+  background-color: var(--dark);
+  border-color: var(--hiring);
+}
+
+/* --- TheReviews --- */
+.reviews {
+  background-color: var(--background);
+}
+.review_card {
+  background-color: var(--dark);
 }

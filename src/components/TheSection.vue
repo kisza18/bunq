@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <GlobalPadding>
-      <div class="pt-20 text-white h-full">
+      <div class="pt-20 text-white h-full pb-20">
         <div
           class="section_container flex items-center justify-between w-full h-full px-7"
         >
@@ -34,6 +34,47 @@
               src="../assets/images/illustration_globe.webp"
               alt="section_image"
             />
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center text-white mt-10">
+        <h1 class="text-4xl font-extrabold">Sustainable, solid, secure.</h1>
+        <div class="section_card_container flex gap-6 w-full my-14">
+          <div class="section_card rounded-3xl w-1/3 py-7 pl-6 pr-5">
+            <img
+              class="w-12 mb-3"
+              src="../assets/images/shield.svg"
+              alt="shield"
+            />
+            <h1 class="text-2xl font-semibold mb-3">Money Safety</h1>
+            <p class="leading-8">
+              We have our own banking permit granted by the ECB, your money is
+              secured up to €100.000.
+            </p>
+          </div>
+          <div class="section_card rounded-3xl w-1/3 py-7 pl-6 pr-5">
+            <img
+              class="w-12 mb-3"
+              src="../assets/images/tree_icon.svg"
+              alt="shield"
+            />
+            <h1 class="text-2xl font-semibold mb-3">Sustainable</h1>
+            <p class="leading-8">
+              We are the only bank in the world that lets you choose how your
+              money is invested.
+            </p>
+          </div>
+          <div class="section_card rounded-3xl w-1/3 py-7 pl-6 pr-5">
+            <img
+              class="w-12 mb-3"
+              src="../assets/images/help_icon.svg"
+              alt="shield"
+            />
+            <h1 class="text-2xl font-semibold mb-3">24/7 Online Support</h1>
+            <p class="leading-8">
+              You can always reach out to us if you have any questions or run
+              into some problems. We speak your language.
+            </p>
           </div>
         </div>
       </div>
