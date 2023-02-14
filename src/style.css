@@ -21,9 +21,13 @@
   --deeppurple: #a22fb6;
   --orange: #ff7819;
   --lightblue: #3180fe;
+  --links: #999;
 }
 .active {
   background-color: black;
+}
+body {
+  background-color: var(--background);
 }
 /* --- Navbar --- */
 .navbar {
@@ -237,4 +241,49 @@ input:checked[type="checkbox"]:before {
 }
 .review_card {
   background-color: var(--dark);
+  position: relative;
+}
+.review_card::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: -25px;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-right: 15px solid var(--dark);
+  transform: rotate(-90deg);
+}
+.platform_card {
+  background-color: var(--dark);
+}
+
+/* --- TheTrial --- */
+.the_trial {
+  background-color: var(--background);
+}
+
+/* --- TheFooter --- */
+.the_footer {
+  background-color: var(--dark);
+}
+.links_container a {
+  color: var(--links);
+}
+.links_container a:hover {
+  color: var(--gray);
+}
+.gray_line {
+  background-color: var(--gray);
+  height: 1px;
+}
+.foot_links {
+  color: var(--links);
+}
+.foot_links a:hover {
+  color: var(--gray);
+}
+.platform_links a:hover {
+  opacity: 0.8;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="navbar h-20 w-full border-b z-20"
+      class="navbar h-20 w-full border-b z-30"
       :class="{ 'navbar--hidden': !showNavbar }"
     >
       <GlobalPadding>
@@ -49,7 +49,7 @@
       </GlobalPadding>
     </div>
     <div
-      class="navbar_menu absolute z-10 h-full w-full bg-black opacity-80 mt-20 hide_nav hidden"
+      class="navbar_menu absolute z-20 h-full w-full bg-black opacity-80 mt-20 hide_nav hidden"
     >
       <div
         class="nav_items_container w-full h-full flex items-center justify-center"

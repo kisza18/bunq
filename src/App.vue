@@ -8,8 +8,11 @@
     <OurPlans />
     <TheSection />
     <TheReview />
+    <TheTrial />
   </main>
-  <footer class="h-screen"></footer>
+  <footer>
+    <TheFooter />
+  </footer>
 </template>
 
 <script>
@@ -19,6 +22,8 @@ import PressLogos from "./components/PressLogos.vue";
 import OurPlans from "./components/OurPlans.vue";
 import TheSection from "./components/TheSection.vue";
 import TheReview from "./components/TheReviews.vue";
+import TheTrial from "./components/TheTrial.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   name: "App",
@@ -29,6 +34,8 @@ export default {
     OurPlans,
     TheSection,
     TheReview,
+    TheTrial,
+    TheFooter,
   },
 };
 </script>
