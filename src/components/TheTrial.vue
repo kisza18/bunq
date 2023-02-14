@@ -1,8 +1,10 @@
 <template>
   <div class="the_trial">
     <GlobalPadding>
-      <div class="flex flex-col items-center justify-center text-white py-16">
-        <h1 class="text-4xl font-extrabold mb-10">
+      <div
+        class="flex flex-col text-center md:text-start items-center justify-center text-white py-16"
+      >
+        <h1 class="text-2xl md:text-4xl font-extrabold mb-10">
           Start your 30-day free trial
         </h1>
         <p class="mb-8">
@@ -14,7 +16,7 @@
           >Get started</a
         >
         <img
-          class="scale-75 -mt-20 z-0"
+          class="scale-75 xl:-mt-20 lg:-mt-16 z-0"
           src="../assets/images/rainbow_phone.png"
           alt=""
         />

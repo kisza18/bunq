@@ -24,7 +24,7 @@
         <!-- Personal -->
         <div
           v-show="!change"
-          class="personal_class flex items-center justify-center"
+          class="personal_class flex flex-col md:flex-row items-center justify-center"
         >
           <h1 class="flex items-center justify-center px-2">
             <img class="px-2" src="../assets/images/blue_check.svg" alt="" />

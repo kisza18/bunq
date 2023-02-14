@@ -1,9 +1,9 @@
 <template>
   <div class="the_footer w-full">
     <GlobalPadding>
-      <div class="flex pt-16 pb-3">
+      <div class="flex flex-col md:flex-row pt-16 pb-3">
         <div
-          class="logo_language w-1/4 flex flex-col items-start justify-between"
+          class="logo_language w-1/4 flex flex-col items-start justify-between mb-10 md:mb-0"
         >
           <a class="hover:opacity-80 duration-300 ease-in-out" href="">
             <img
@@ -18,7 +18,7 @@
             >English</a
           >
         </div>
-        <div class="links_container flex w-2/4 gap-28">
+        <div class="links_container flex md:w-2/4 gap-28">
           <div class="left flex flex-col gap-4">
             <h1 class="text-white font-semibold mb-2">Company</h1>
             <a href="">Mortgages</a>
@@ -36,9 +36,9 @@
           </div>
         </div>
         <div
-          class="platform_links w-1/4 flex flex-col items-end justify-between"
+          class="platform_links md:w-1/4 flex flex-col items-center md:items-end justify-between mt-10 md:mt-0"
         >
-          <div class="flex gap-4">
+          <div class="flex gap-4 mb-10 md:mb-0">
             <a href="">
               <img src="../assets/images/instagram_icon.svg" alt="" />
             </a>

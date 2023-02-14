@@ -3,10 +3,12 @@
     <GlobalPadding>
       <div class="pt-20 text-white h-full pb-20">
         <div
-          class="section_container flex items-center justify-between w-full h-full px-7"
+          class="section_container flex flex-col md:flex-row items-center justify-between w-full h-full px-7"
         >
-          <div class="content w-1/2">
-            <div class="flex items-center mb-6">
+          <div class="content md:w-1/2">
+            <div
+              class="flex flex-col xl:flex-row items-start xl:items-center mb-6"
+            >
               <div class="mr-2">
                 <h1 class="text-4xl font-extrabold">We are</h1>
                 <div class="h-4 -mt-3"></div>
@@ -28,7 +30,7 @@
               >Learn more about us</a
             >
           </div>
-          <div class="image w-1/2">
+          <div class="image md:w-1/2">
             <img
               class="scale-90 pt-10 hover:scale-95 duration-700"
               src="../assets/images/illustration_globe.webp"
@@ -38,9 +40,13 @@
         </div>
       </div>
       <div class="flex flex-col items-center text-white mt-10">
-        <h1 class="text-4xl font-extrabold">Sustainable, solid, secure.</h1>
-        <div class="section_card_container flex gap-6 w-full my-14">
-          <div class="section_card rounded-3xl w-1/3 py-7 pl-6 pr-5">
+        <h1 class="text-2xl md:text-4xl font-extrabold">
+          Sustainable, solid, secure.
+        </h1>
+        <div
+          class="section_card_container grid grid-cols-2 md:flex md:flex-row gap-6 w-full my-14"
+        >
+          <div class="section_card rounded-3xl md:w-1/3 py-7 pl-6 pr-5">
             <img
               class="w-12 mb-3"
               src="../assets/images/shield.svg"
@@ -52,7 +58,7 @@
               secured up to €100.000.
             </p>
           </div>
-          <div class="section_card rounded-3xl w-1/3 py-7 pl-6 pr-5">
+          <div class="section_card rounded-3xl md:w-1/3 py-7 pl-6 pr-5">
             <img
               class="w-12 mb-3"
               src="../assets/images/tree_icon.svg"
@@ -64,7 +70,7 @@
               money is invested.
             </p>
           </div>
-          <div class="section_card rounded-3xl w-1/3 py-7 pl-6 pr-5">
+          <div class="section_card rounded-3xl md:w-1/3 py-7 pl-6 pr-5">
             <img
               class="w-12 mb-3"
               src="../assets/images/help_icon.svg"

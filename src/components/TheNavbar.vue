@@ -14,7 +14,7 @@
                 alt="logo"
               />
             </a>
-            <div class="hiring rounded-2xl text-sm ml-6">
+            <div class="hiring rounded-2xl text-sm ml-6 hidden lg:flex">
               <a href="" class="animation px-2 py-2 flex items-center">
                 <div class="hand mr-2">👋</div>
                 <div>We're hiring!</div>
@@ -24,17 +24,17 @@
           <div class="right_container">
             <div class="flex items-center justify-center">
               <a
-                class="compare duration-300 ease-in-out font-semibold mr-8"
+                class="compare duration-300 ease-in-out font-semibold mr-8 hidden md:flex"
                 href=""
                 >Compare plans</a
               >
               <a
-                class="join px-4 py-2 font-semibold rounded-full duration-300 ease-in-out mr-4"
+                class="join px-4 py-2 font-semibold rounded-full duration-300 ease-in-out mr-4 hidden md:flex"
                 href=""
                 >Join us now</a
               >
               <a
-                class="login px-4 py-2 font-semibold rounded-full hover:opacity-75 duration-300 ease-in-out mr-11"
+                class="login px-4 py-2 font-semibold rounded-full hover:opacity-75 duration-300 ease-in-out mr-11 hidden md:flex"
                 href=""
                 >Log in</a
               >

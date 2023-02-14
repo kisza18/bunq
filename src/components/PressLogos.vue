@@ -1,36 +1,36 @@
 <template>
-  <div class="press_logos w-full py-20">
+  <div class="press_logos w-full py-20 mt-20 md:mt-0">
     <GlobalPadding>
       <div
-        class="grid grid-cols-6 gap-10 items-center justify-between w-full px-7"
+        class="grid grid-cols-3 lg:grid-cols-6 gap-10 items-center justify-between w-full px-7"
       >
         <a
-          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out"
+          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out flex justify-center"
           href=""
           ><img src="../assets/images/forbes_logo.svg" alt=""
         /></a>
         <a
-          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out"
+          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out flex justify-center"
           href=""
           ><img src="../assets/images/thefintech.svg" alt=""
         /></a>
         <a
-          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out"
+          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out flex justify-center"
           href=""
           ><img src="../assets/images/wired_logo.svg" alt=""
         /></a>
         <a
-          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out"
+          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out flex justify-center"
           href=""
           ><img src="../assets/images/techcrunch.svg" alt=""
         /></a>
         <a
-          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out"
+          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out flex justify-center"
           href=""
           ><img src="../assets/images/business_insider_logo.svg" alt=""
         /></a>
         <a
-          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out"
+          class="press_logo opacity-50 hover:opacity-40 duration-300 ease-in-out flex justify-center"
           href=""
           ><img src="../assets/images/reuters_logo.svg" alt=""
         /></a>
