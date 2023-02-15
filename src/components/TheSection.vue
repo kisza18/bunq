@@ -5,7 +5,7 @@
         <div
           class="section_container flex flex-col md:flex-row items-center justify-between w-full h-full px-7"
         >
-          <div class="content md:w-1/2">
+          <div class="content animation4 md:w-1/2">
             <div
               class="flex flex-col xl:flex-row items-start xl:items-center mb-6"
             >
@@ -30,7 +30,7 @@
               >Learn more about us</a
             >
           </div>
-          <div class="image md:w-1/2">
+          <div class="image md:w-1/2 animation5">
             <img
               class="scale-90 pt-10 hover:scale-95 duration-700"
               src="../assets/images/illustration_globe.webp"
@@ -40,13 +40,15 @@
         </div>
       </div>
       <div class="flex flex-col items-center text-white mt-10">
-        <h1 class="text-2xl md:text-4xl font-extrabold">
+        <h1 class="animation0 text-2xl md:text-4xl font-extrabold">
           Sustainable, solid, secure.
         </h1>
         <div
           class="section_card_container grid grid-cols-2 md:flex md:flex-row gap-6 w-full my-14"
         >
-          <div class="section_card rounded-3xl md:w-1/3 py-7 pl-6 pr-5">
+          <div
+            class="section_card animation1 rounded-3xl md:w-1/3 py-7 pl-6 pr-5"
+          >
             <img
               class="w-12 mb-3"
               src="../assets/images/shield.svg"
@@ -58,7 +60,9 @@
               secured up to €100.000.
             </p>
           </div>
-          <div class="section_card rounded-3xl md:w-1/3 py-7 pl-6 pr-5">
+          <div
+            class="section_card animation2 rounded-3xl md:w-1/3 py-7 pl-6 pr-5"
+          >
             <img
               class="w-12 mb-3"
               src="../assets/images/tree_icon.svg"
@@ -70,7 +74,9 @@
               money is invested.
             </p>
           </div>
-          <div class="section_card rounded-3xl md:w-1/3 py-7 pl-6 pr-5">
+          <div
+            class="section_card animation3 rounded-3xl md:w-1/3 py-7 pl-6 pr-5"
+          >
             <img
               class="w-12 mb-3"
               src="../assets/images/help_icon.svg"
@@ -88,10 +94,126 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import GlobalPadding from "../layouts/GlobalPadding.vue";
+import gsap from "gsap";
+import { onMounted } from "vue";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
-export default {
-  components: { GlobalPadding },
-};
+onMounted(() => {
+  gsap.fromTo(
+    ".animation1",
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      scrollTrigger: {
+        trigger: ".section_card_container",
+        once: true,
+        start: "top center",
+      },
+      duration: 1.0,
+      opacity: 1,
+      y: 0,
+      delay: 0.2,
+    }
+  );
+});
+onMounted(() => {
+  gsap.fromTo(
+    ".animation2",
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      scrollTrigger: {
+        trigger: ".section_card_container",
+        once: true,
+        start: "top center",
+      },
+      duration: 1.0,
+      opacity: 1,
+      y: 0,
+      delay: 0.4,
+    }
+  );
+});
+onMounted(() => {
+  gsap.fromTo(
+    ".animation3",
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      scrollTrigger: {
+        trigger: ".section_card_container",
+        once: true,
+        start: "top center",
+      },
+      duration: 1.0,
+      opacity: 1,
+      y: 0,
+      delay: 0.6,
+    }
+  );
+});
+onMounted(() => {
+  gsap.fromTo(
+    ".animation0",
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      scrollTrigger: {
+        trigger: ".section_card_container",
+        once: true,
+        start: "top-=200px center",
+      },
+      duration: 1.0,
+      opacity: 1,
+      y: 0,
+    }
+  );
+});
+onMounted(() => {
+  gsap.fromTo(
+    ".animation4",
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      scrollTrigger: {
+        trigger: ".section_container",
+        once: true,
+        start: "top+=100px center",
+      },
+      duration: 1.0,
+      opacity: 1,
+      y: 0,
+    }
+  );
+});
+onMounted(() => {
+  gsap.fromTo(
+    ".animation5",
+    {
+      scale: 0,
+    },
+    {
+      scrollTrigger: {
+        trigger: ".section_container",
+        once: true,
+        start: "top center",
+      },
+      duration: 1.0,
+      scale: 1,
+    }
+  );
+});
 </script>

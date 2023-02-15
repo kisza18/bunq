@@ -207,10 +207,6 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import GlobalPadding from "../layouts/GlobalPadding.vue";
-
-export default {
-  components: { GlobalPadding },
-};
 </script>
