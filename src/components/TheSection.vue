@@ -44,7 +44,7 @@
           Sustainable, solid, secure.
         </h1>
         <div
-          class="section_card_container grid grid-cols-2 md:flex md:flex-row gap-6 w-full my-14"
+          class="section_card_container grid grid-cols-1 md:grid-cols-2 md:flex md:flex-row gap-6 w-full my-14"
         >
           <div
             class="section_card animation1 rounded-3xl md:w-1/3 py-7 pl-6 pr-5"
